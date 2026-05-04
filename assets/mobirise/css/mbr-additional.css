@@ -682,15 +682,10 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-viEHUJ4CgP {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #000000;
-}
-.cid-viEHUJ4CgP .mbr-fallback-image.disabled {
+.cid-viFx5wHTlm .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-viEHUJ4CgP .mbr-fallback-image {
+.cid-viFx5wHTlm .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -698,14 +693,7 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
-}
-.cid-viEHUJ4CgP .video-wrapper iframe {
-  width: 100%;
-}
-.cid-viEHUJ4CgP .mbr-section-title,
-.cid-viEHUJ4CgP .mbr-section-subtitle,
-.cid-viEHUJ4CgP .mbr-text {
-  text-align: center;
+  background-image: url("../../../assets/images/background13.jpg");
 }
 .cid-viEHbNFHCa {
   padding-top: 1rem;
