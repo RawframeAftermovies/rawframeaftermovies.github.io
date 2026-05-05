@@ -699,31 +699,35 @@ a {
   display: block;
   object-fit: cover;
 }
-.cid-viEHbNFHCa {
+.cid-viLHwrpZFp {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   background-color: #000000;
 }
-.cid-viEHbNFHCa .mbr-overlay {
+.cid-viLHwrpZFp .mbr-overlay {
   background-color: #ffffff;
   opacity: 0.4;
 }
-.cid-viEHbNFHCa form .mbr-section-btn {
+.cid-viLHwrpZFp form .mbr-section-btn {
   text-align: center;
   width: 100%;
 }
-.cid-viEHbNFHCa form .mbr-section-btn .btn {
+.cid-viLHwrpZFp form .mbr-section-btn .btn {
   display: inline-flex;
 }
 @media (max-width: 991px) {
-  .cid-viEHbNFHCa form .mbr-section-btn .btn {
+  .cid-viLHwrpZFp form .mbr-section-btn .btn {
     width: 100%;
   }
 }
-.cid-viEHbNFHCa .mbr-section-subtitle {
+.cid-viLHwrpZFp .mbr-section-title {
   color: #ffffff;
 }
-.cid-sFF3CYc3p7 {
+.cid-viLHwrpZFp .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: center;
+}
+.cid-viLBgdGIv8 {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #000000;
