@@ -53,7 +53,7 @@
     "dppsSwitcher": true,
     "spellingSwitch": true,
     "site_lang": "en",
-    "uniqCompNum": 11,
+    "uniqCompNum": 14,
     "versionPublish": "5.7.8",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -83,17 +83,25 @@
           "alias": "deltapi-code-editor",
           "_isSecondary": true,
           "_styles": {
-            "padding-top": "6rem",
-            "padding-bottom": "6rem",
-            "background-color": "#000000",
-            ".mbr-section": {
-              "text-align": "center",
-              "color": "#fff"
-            }
+            ".hero-video": {
+              "width": "100%",
+              "aspect-ratio": "(16 / 9)",
+              "max-height": "100dvh",
+              "overflow": "hidden",
+              "background": "black",
+              "box-sizing": "border-box"
+            },
+            ".hero-video video": {
+              "width": "100%",
+              "height": "100%",
+              "display": "block",
+              "object-fit": "cover"
+            },
+            "background-color": "#000000"
           },
           "_name": "custom-html",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section style=\"position:relative; width:100%; height:100vh; overflow:hidden;\">\r\n\r\n<video autoplay muted loop playsinline preload=\"auto\"\r\n  style=\"\r\n    position:absolute;\r\n    top:50%;\r\n    left:50%;\r\n    transform:translate(-50%, -50%);\r\n    width:100%;\r\n    height:100%;\r\n    object-fit:contain;\r\n  \">\r\n\r\n    <source src=\"https://cdn.jsdelivr.net/gh/RawframeAftermovies/rawframeaftermovies.github.io@main/COMPRESSEDLOOP45.mp4\" type=\"video/mp4\">\r\n\r\n  </video>\r\n\r\n</section>",
+          "_customHTML": "<section class=\"hero-video\">\r\n\r\n  <video autoplay muted loop playsinline preload=\"auto\">\r\n    <source src=\"https://cdn.jsdelivr.net/gh/RawframeAftermovies/rawframeaftermovies.github.io@main/COMPRESSEDLOOP45.mp4\" type=\"video/mp4\">\r\n  </video>\r\n\r\n</section>\r\n\r\n<style>\r\n.hero-video{\r\n  width:100%;\r\n  aspect-ratio: 4 / 3; \r\n  max-height:100vh;\r\n  overflow:hidden;\r\n  background:black;\r\n}\r\n\r\n.hero-video video{\r\n  width:100%;\r\n  height:100%;\r\n  display:block;\r\n  object-fit:contain;\r\n}\r\n</style>",
           "_cid": "viLogFwLfF",
           "_anchor": "custom-html-a",
           "_protectedParams": [],
