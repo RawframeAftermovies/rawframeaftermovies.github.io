@@ -95,6 +95,11 @@
             ".mbr-fallback-image.disabled": {
               "display": "none"
             },
+            "section.header2 video": {
+              "width": "100% !important",
+              "height": "auto !important",
+              "object-fit": "contain"
+            },
             ".mbr-fallback-image": {
               "display": "block",
               "background-size": "cover",

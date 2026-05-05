@@ -685,6 +685,11 @@ a {
 .cid-viFx5wHTlm .mbr-fallback-image.disabled {
   display: none;
 }
+.cid-viFx5wHTlm section.header2 video {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
 .cid-viFx5wHTlm .mbr-fallback-image {
   display: block;
   background-size: cover;
