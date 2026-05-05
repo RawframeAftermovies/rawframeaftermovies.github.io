@@ -72,9 +72,9 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
-        "header_custom": "",
+        "title": "RAWFRAME - UNPOLISHED AFTERMOVIES",
+        "meta_descr": "Using lo-fi tape cameras we capture the raw hidden pulse of the night.",
+        "header_custom": "<style>\n    body {\n        background-color: #000000;\n    }\n</style>",
         "footer_custom": "",
         "html_before": ""
       },
