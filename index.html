@@ -31,7 +31,7 @@
 </head>
 <body>
   
-  <meta charset="UTF-8" class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="622"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="622"><title class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="622">Welcome</title><style class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="622">
+  <meta charset="UTF-8" class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="1135"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="1135"><title class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="1135">Welcome</title><style class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="1135">
     html, body {
       margin: 0;
       padding: 0;
@@ -60,7 +60,7 @@
     <video autoplay="" muted="" loop="" playsinline="" preload="auto">
       <source src="https://cdn.jsdelivr.net/gh/RawframeAftermovies/rawframeaftermovies.github.io@main/COMPRESSEDLOOP45.mp4" type="video/mp4">
     </video>
-  </section><script class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="622">
+  </section><script class="cid-viLogFwLfF" id="custom-html-a" data-rv-view="1135">
     (function () {
 
       // Prevent redirects inside Mobirise editor/iframe
@@ -102,12 +102,157 @@
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/8638" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">AI Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/8638" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
   <style>
 section.display-7:has(a[href*="mobiri.se/8638"]) {
     display: none !important;
 }
 </style>
+
+
+
+
+
+
+<style>
+.ca-char {
+  display: inline;
+  text-shadow:
+    calc(var(--ca-offset, 0px) * -1) 0 rgba(255, 0, 50, 1),
+    var(--ca-offset, 0px) 0 rgba(0, 220, 255, 1) !important;
+}
+</style>
+
+<script>
+(function () {
+
+  const headingSelector = [
+    'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+    '.mbr-section-title',
+    '.mbr-card-title',
+    '.card-title'
+  ].join(',');
+
+  function prepareText() {
+
+    const walker = document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function(node) {
+          if (!node.nodeValue.trim()) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          const parent = node.parentElement;
+
+          if (
+            !parent ||
+            parent.closest(
+              'script,style,noscript,textarea,input,select,svg,' +
+              '.mbr-iconfont,.socicon,.iconfont-wrapper,.ca-char'
+            )
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    const nodes = [];
+
+    while (walker.nextNode()) {
+      nodes.push(walker.currentNode);
+    }
+
+    nodes.forEach(function(node) {
+
+      const parent = node.parentElement;
+      let isHeading = !!parent.closest(headingSelector);
+
+      if (parent.closest('.form5 .mbr-section-subtitle')) {
+        isHeading = false;
+      }
+
+      if (parent.closest('button, .btn')) {
+        isHeading = false;
+      }
+
+      const fragment = document.createDocumentFragment();
+
+      for (const char of node.nodeValue) {
+
+        if (/\s/.test(char)) {
+          fragment.appendChild(document.createTextNode(char));
+          continue;
+        }
+
+        const span = document.createElement('span');
+
+        span.className = isHeading
+          ? 'ca-char ca-heading'
+          : 'ca-char ca-regular';
+
+        span.textContent = char;
+        fragment.appendChild(span);
+      }
+
+      node.parentNode.replaceChild(fragment, node);
+    });
+  }
+
+  function updateEffect() {
+
+    const isMobile = window.innerWidth <= 767;
+    const center = window.innerWidth / 2;
+
+    document.querySelectorAll('.ca-char').forEach(function(el) {
+
+      const rect = el.getBoundingClientRect();
+
+      if (!rect.width) return;
+
+      const x = rect.left + rect.width / 2;
+
+      const distance = Math.min(
+        1,
+        Math.abs(x - center) / center
+      );
+
+      const intensity = Math.pow(distance, 0.65);
+
+      const maxOffset = isMobile
+        ? (el.classList.contains('ca-heading') ? 7 : 1)
+        : (el.classList.contains('ca-heading') ? 14 : 2);
+
+      const offset = maxOffset * intensity;
+
+      el.style.setProperty(
+        '--ca-offset',
+        offset.toFixed(2) + 'px'
+      );
+    });
+  }
+
+  function initialize() {
+    prepareText();
+    updateEffect();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize);
+  } else {
+    initialize();
+  }
+
+  window.addEventListener('load', updateEffect);
+  window.addEventListener('resize', updateEffect);
+
+})();
+</script>
+
   
 </body>
 </html>
