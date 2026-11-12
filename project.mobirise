@@ -352,6 +352,9 @@
                 ".nav-item .nav-link::before": {
                   "display": "none"
                 },
+                ".container, .container-fluid": {
+                  "position": "relative"
+                },
                 ".navbar-toggler": {
                   "position": "absolute !important",
                   "left": "50% !important",
@@ -362,19 +365,32 @@
                   "z-index": "20",
                   "flex-basis": "auto"
                 },
-                "&.opened .navbar-toggler": {
-                  "position": "absolute !important",
-                  "left": "50% !important",
-                  "top": "auto !important",
-                  "bottom": "-45px !important",
-                  "transform": "translateX(-50%) !important",
-                  "margin": "0 !important",
-                  "z-index": "20"
-                },
-                "&.opened .navbar-collapse": {
-                  "padding-bottom": "55px !important"
-                },
                 "&.opened": {
+                  ".container, .container-fluid": {
+                    "display": "flex !important",
+                    "flex-direction": "column !important",
+                    "align-items": "center !important"
+                  },
+                  ".navbar-brand": {
+                    "order": "1"
+                  },
+                  ".navbar-collapse": {
+                    "order": "2",
+                    "width": "100%",
+                    "flex-basis": "auto",
+                    "flex-grow": "0"
+                  },
+                  ".navbar-toggler": {
+                    "position": "relative !important",
+                    "left": "auto !important",
+                    "top": "auto !important",
+                    "bottom": "auto !important",
+                    "transform": "none !important",
+                    "order": "3",
+                    "align-self": "center !important",
+                    "margin": "20px auto 10px !important",
+                    "z-index": "20"
+                  },
                   ".dropdown-menu": {
                     "top": "0"
                   }
