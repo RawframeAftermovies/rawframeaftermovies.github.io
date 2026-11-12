@@ -819,8 +819,21 @@ a {
   width: auto;
 }
 .cid-sFGMsvHDIa .navbar .navbar-collapse {
-  justify-content: flex-end;
+  justify-content: center !important;
   z-index: 1;
+}
+.cid-sFGMsvHDIa .navbar .navbar-nav {
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.cid-sFGMsvHDIa .navbar .navbar .container,
+.cid-sFGMsvHDIa .navbar .navbar .container-fluid {
+  justify-content: center !important;
+}
+.cid-sFGMsvHDIa .navbar .navbar .navbar-collapse {
+  flex-grow: 0;
+  flex-basis: auto;
 }
 .cid-sFGMsvHDIa .navbar.collapsed {
   justify-content: center;
