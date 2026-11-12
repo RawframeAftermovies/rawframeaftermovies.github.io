@@ -63,7 +63,7 @@
     "spellingSwitch": true,
     "site_lang": "en",
     "favicon": false,
-    "mbrsiteDomain": "hw4dljo8sv",
+    "mbrsiteDomain": "cfykoyeoiw",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -72,7 +72,7 @@
     "gdpr": false,
     "witsec-white-label": false,
     "witsec-mailform": false,
-    "global_footer_custom": "<style>\nbody > section:last-of-type {\n    display: none !important;\n}\n</style>"
+    "global_footer_custom": "<style>\nsection.display-7:has(a[href*=\"mobiri.se/8638\"]) {\n    display: none !important;\n}\n</style>"
   },
   "pages": {
     "index.html": {
