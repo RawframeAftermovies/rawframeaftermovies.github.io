@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "My Site",
+    "name": "RAWFRAME",
     "currentPage": "main.html",
     "theme": {
       "name": "mobirise5",
@@ -62,8 +62,8 @@
     "dppsSwitcher": true,
     "spellingSwitch": true,
     "site_lang": "en",
-    "favicon": false,
-    "mbrsiteDomain": "cfykoyeoiw",
+    "favicon": "@PROJECT_PATH@/assets/images/record-512-128x128.png",
+    "mbrsiteDomain": "7lgtqbjsrj",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
